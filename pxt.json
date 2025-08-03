@@ -1,0 +1,19 @@
+{
+    "name": "fetcher",
+    "description": "Fetch JSON from a URL",
+    "dependencies": {},
+    "files": [
+        "fetcher.ts",
+        "shim.js"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "2.0.56",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ]
+}
