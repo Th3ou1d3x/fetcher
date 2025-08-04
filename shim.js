@@ -1,7 +1,6 @@
 if (!window.fetcher) window.fetcher = {};
 
 window.fetcher.fetch_json = function (url) {
-    console.log("[shim] fetch_json called with URL:", url);
     let done = false;
     let result = "";
 
@@ -16,11 +15,8 @@ window.fetcher.fetch_json = function (url) {
             done = true;
         });
 
-    // Busy wait synchronously up to 2 seconds for fetch to complete
     const start = Date.now();
-    while (!done && (Date.now() - start) < 2000) {
-        // spinning
-    }
+    while (!done && (Date.now() - start) < 2000) {}
 
     return result;
 };
